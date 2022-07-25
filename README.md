@@ -38,6 +38,13 @@ BotStatus = "Example Bot"
 Prefix = "."
 ```
 
+# Discord Bot Setup
+Create an application at https://discord.com/developers/applications.
+Under the app, create a Bot.
+Under Bot/Privileged Gateway Intents, enable both presence intent and server members intent.
+Copy .envexample to .env, and add the token from the Bot page.
+Invite your bot to your test server via https://discord.com/oauth2/authorize?client_id={CLIENT_ID}&permissions=432114318432&scope=bot, where the client id is found in your General Information page.
+
 # How to run
 The bot can be started with a python command:
 ```sh
@@ -46,3 +53,4 @@ python Bot.py
 
 # Contribution
 You can always pull request to this repo, if you report or fix a bug or if you add more commands to the template I'll be happy to implement them.
+
