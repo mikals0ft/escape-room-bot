@@ -1,3 +1,3 @@
 #Settings for the bot.
-BotStatus = "Example Bot"
-Prefix = "."
+BotStatus = "Escape Room"
+Prefix = "/"
