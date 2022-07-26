@@ -28,9 +28,6 @@ pip install -r requirements.txt
 ### Setting up the bot properties
 
 ```python
-#Insert the token which you can get from Discord's developer page.
-TOKEN = '' 
-
 #Set the bot status below.
 BotStatus = "Example Bot"
 
@@ -42,7 +39,10 @@ Prefix = "."
 Create an application at https://discord.com/developers/applications.
 Under the app, create a Bot.
 Under Bot/Privileged Gateway Intents, enable both presence intent and server members intent.
-Copy .envexample to .env, and add the token from the Bot page.
+Add the token from the Bot page to the `BOT_TOKEN` environment variable.
+```bash
+export BOT_TOKEN=[bot token]
+```
 Invite your bot to your test server via https://discord.com/oauth2/authorize?client_id={CLIENT_ID}&permissions=432114318432&scope=bot, where the client id is found in your General Information page.
 
 # How to run

@@ -1,14 +1,12 @@
-import asyncio
 import discord
 from discord.ext import commands
-from typing import List, Optional
+import os
 
 import settings
 
 intents = discord.Intents.default()
 
-cogs: list = ["Functions.Fun.games", "Functions.Fun.gameinfos", "Functions.Fun.otherfuncommands", "Functions.Info.info",
-        "Functions.Misc.misc", "Functions.NewMember.newmember", "Functions.Admin.admin", "Functions.EscapeRooms.wumpusfoodtour"]
+cogs: list = ["Functions.EscapeRooms.wungusfoodtour"]
 
 client = commands.Bot(command_prefix=settings.Prefix, help_command=None, intents=intents)
 
@@ -26,4 +24,4 @@ async def on_ready():
             exc = "{}: {}".format(type(e).__name__, e)
             print("Failed to load cog {}\n{}".format(cog, exc))
 
-client.run(settings.TOKEN)
+client.run(os.environ['BOT_TOKEN'])

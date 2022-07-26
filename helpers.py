@@ -4,17 +4,15 @@ from typing import List
 
 
 def check_reaction(reaction, conditions):
-    print(str(reaction.emoji))
-    if 'coffee' in str(reaction.emoji) or str(reaction.emoji) == '☕':
+    if 'coffee' in str(reaction.emoji).lower() or str(reaction.emoji) == '☕':
         conditions[0] = True
-    elif 'sushi' in str(reaction.emoji) or str(reaction.emoji) == '🍣':
+    elif 'sushi' in str(reaction.emoji).lower() or str(reaction.emoji) == '🍣':
         conditions[1] = True
-    elif 'icecream' in str(reaction.emoji) or str(reaction.emoji) == '🍦':
+    elif 'icecream' in str(reaction.emoji).lower() or str(reaction.emoji) == '🍦':
         conditions[2] = True
-    elif 'beer' in str(reaction.emoji) or str(reaction.emoji) == '🍺':
+    elif 'beer' in str(reaction.emoji).lower() or str(reaction.emoji) == '🍺':
         conditions[3] = True
     return conditions
-
 
 async def wait_for_reactions_on_message(message: discord.Message, bot: discord.Client, conditions) -> List[bool]:
 
