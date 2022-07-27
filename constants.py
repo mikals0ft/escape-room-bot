@@ -1,4 +1,6 @@
-ATTENDEE_ROLE_NAME = 'Escape Room Attendee'
+ATTENDEE_ROLE_NAME = "Escape Room Attendee"
+
+CARL_BOT_ID = 235148962103951360
 
 FOOD_TOUR_INTRO_MESSAGE = "Hey there! Wungus here. After a grueling day of work at the office, I was looking at" \
                           " places where I could grab a bite or drink on either 17th or De Haro. I had 4 places set " \
@@ -20,7 +22,12 @@ VALID_ROOM_ROLES = [
     'room-1',
     'room-2',
     'room-3',
+    'room-3a-complete',
+    'room-3b-complete',
+    'room-3c-complete',
     'room-4',
     'room-5',
+    'room-5a-complete',
+    'room-5b-complete',
     'room-6'
 ]
