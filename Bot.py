@@ -7,7 +7,7 @@ import settings
 intents = discord.Intents.default()
 intents.members = True
 
-cogs: list = ["Functions.Admin.admin", "Functions.EscapeRooms.wungusfoodtour"]
+cogs: list = ["Functions.EscapeRoom.escaperoom"]
 
 
 client = commands.Bot(command_prefix=settings.Prefix, help_command=None, intents=intents)
