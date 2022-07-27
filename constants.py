@@ -29,7 +29,9 @@ VALID_ROOM_ROLES = [
     'room-5',
     'room-5a-complete',
     'room-5b-complete',
-    'room-6'
+    'room-6',
+    'final-room',
+    'escape-room-complete'
 ]
 
 
