@@ -3,6 +3,7 @@ from constants import FOOD_TOUR_INTRO_MESSAGE, FOOD_TOUR_SOLUTIONS
 import operator
 
 from constants import ATTENDEE_ROLE_NAME, CARL_BOT_ID, VALID_ROOM_ROLES
+from constants import LZ_WELCOME
 from discord.ext import commands
 from discord.member import Member
 from discord.message import Message
@@ -48,7 +49,7 @@ class EscapeRoom(commands.Cog):
         landing_zone_channel = discord.utils.get(after.guild.channels, name="landing-zone")
         await after.add_roles(newbie_role)
         if landing_zone_channel is not None:
-            await landing_zone_channel.send('Welcome to the our Virtual Escape Room {0.mention}.'.format(after))
+            await landing_zone_channel.send(LZ_WELCOME.format(after))
 
     @commands.Cog.listener()
     async def on_message(self, message: Message):

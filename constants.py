@@ -31,3 +31,16 @@ VALID_ROOM_ROLES = [
     'room-5b-complete',
     'room-6'
 ]
+
+
+LZ_WELCOME = "Welcome to the our Virtual Escape Room {0.mention}. \n\n" \
+             "Wumpus just moved to San Francisco to start their new job at Discord. For this escape room, " \
+             "Wumpus will be starting at Discord Headquarters for their onboarding. You will need to solve " \
+             "puzzles to learn some of the functionality of the Discord platform. Wumpus was also assigned an " \
+             "onboarding project of exploring San Francisco and reporting back with their findings. In order " \
+             "to travel to different locations and parts of SF, you will need to solve more challenging puzzles" \
+             " in order to eat, drink and visit some of SF’s most famous locales. \n\n" \
+             "Just like any other physical escape rooms, **everything** in the room is useful information! " \
+             "So pay attention to all the details. \n\n" \
+             "Try `!hint` if you are stuck and really need some help, you won't be frowned upon :slight_smile:" \
+    
