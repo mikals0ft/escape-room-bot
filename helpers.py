@@ -23,4 +23,6 @@ async def wait_for_reactions_on_message(message: discord.Message, bot: discord.C
             return [False, False, False, False]
         if react.message.id != message.id:
             continue
+        if str(react.emoji) == '❌':
+            raise Exception('Wungus Food Tour instance terminated')
         return check_reaction(react, conditions)
