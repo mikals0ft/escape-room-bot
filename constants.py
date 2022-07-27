@@ -44,5 +44,4 @@ LZ_WELCOME = "Welcome to the our Virtual Escape Room {0.mention}. \n\n" \
              " in order to eat, drink and visit some of SF’s most famous locales. \n\n" \
              "Just like any other physical escape rooms, **everything** in the room is useful information! " \
              "So pay attention to all the details. \n\n" \
-             "Try `!hint` if you are stuck and really need some help, you won't be frowned upon :slight_smile:" \
-    
+             "Try `!hint` if you are stuck and really need some help, you won't be frowned upon :slight_smile:"
