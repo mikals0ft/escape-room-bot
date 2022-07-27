@@ -43,6 +43,14 @@ class EscapeRoom(commands.Cog):
             # await after.send('Room 6 unlocked')
 
     @commands.Cog.listener()
+    async def on_member_join(self, after: Member):
+        newbie_role = discord.utils.get(after.guild.roles, name='Escape Room Attendee')
+        landing_zone_channel = discord.utils.get(after.guild.channels, name="landing-zone")
+        await after.add_roles(newbie_role)
+        if landing_zone_channel is not None:
+            await landing_zone_channel.send('Welcome to the our Virtual Escape Room {0.mention}.'.format(after))
+
+    @commands.Cog.listener()
     async def on_message(self, message: Message):
         user_id = message.author.id
         if user_id == CARL_BOT_ID:
