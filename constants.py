@@ -9,7 +9,7 @@ FOOD_TOUR_INTRO_MESSAGE = "Hey there! Wungus here. After a grueling day of work 
                           "'liapblrzmhielcobmhoknvi'. Would you please be so kind as to help me remember those 4 " \
                           "places and deliver the food/beverage they are most known for to me? Thanks! Appreciate it!" \
                           "\n" \
-                          "P.S. I only accept delveries in the form of emoji reactions to this message."
+                          "P.S. I only accept deliveries in the form of emoji reactions to this message."
 
 FOOD_TOUR_SOLUTIONS = [
     'philz',
