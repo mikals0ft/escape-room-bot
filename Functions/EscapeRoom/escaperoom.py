@@ -80,6 +80,12 @@ class EscapeRoom(commands.Cog):
             elif channel.name == 'room-5b':
                 if message.content == "Room 5b complete":
                     await self.unlock_role(guild, channel, 'room-5b-complete')
+            elif channel.name == 'room-6':
+                if message.content == "Room 6 complete":
+                    await self.unlock_role(guild, channel, 'final-room')
+            elif channel.name == 'final-room':
+                if message.content == "Final room complete":
+                    await self.unlock_role(guild, channel, 'escape-room-complete')
 
     async def unlock_role(self, guild, channel, room_name):
         if room_name in VALID_ROOM_ROLES:
