@@ -1,16 +1,17 @@
 import asyncio
 import discord
+import re
 from typing import List
 
 
 def check_reaction(reaction, conditions):
-    if 'coffee' in str(reaction.emoji).lower() or str(reaction.emoji) == '☕':
+    if re.search('.*cofee.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '☕':
         conditions[0] = True
-    elif 'sushi' in str(reaction.emoji).lower() or str(reaction.emoji) == '🍣':
+    elif re.search('.*sushi.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍣':
         conditions[1] = True
-    elif 'icecream' in str(reaction.emoji).lower() or str(reaction.emoji) == '🍦':
+    elif re.search('.*ice.*cream', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍦' or str(reaction.emoji) == '🍨':
         conditions[2] = True
-    elif 'beer' in str(reaction.emoji).lower() or str(reaction.emoji) == '🍺':
+    elif re.search('.*beer.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍺':
         conditions[3] = True
     return conditions
 
