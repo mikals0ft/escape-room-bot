@@ -9,7 +9,7 @@ def check_reaction(reaction, conditions):
         conditions[0] = True
     elif re.search('.*sushi.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍣':
         conditions[1] = True
-    elif re.search('.*ice.*cream', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍦' or str(reaction.emoji) == '🍨':
+    elif re.search('.*ice.*cream.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍦' or str(reaction.emoji) == '🍨':
         conditions[2] = True
     elif re.search('.*beer.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍺':
         conditions[3] = True
