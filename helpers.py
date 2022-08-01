@@ -5,7 +5,7 @@ from typing import List
 
 
 def check_reaction(reaction, conditions):
-    if re.search('.*cofee.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '☕':
+    if re.search('.*coffee.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '☕':
         conditions[0] = True
     elif re.search('.*sushi.*', str(reaction.emoji).lower()) or str(reaction.emoji) == '🍣':
         conditions[1] = True
